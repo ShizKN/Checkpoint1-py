@@ -1,5 +1,5 @@
 import random
-number = 1
+number = -65
 print("Welcome to the Guess the Number game!")
 print("I'm thinking of a number between 1 and 100. Can you guess what it is?")
 guesses = 0
@@ -21,10 +21,11 @@ while True:
         continue
     break
 while guess != number:
-    guess = int(input("Make a guess: "))
+    guess = int(input("Guess the number : "))
     guesses += 1
     if guess < number:
         print("Your guess is too low. Guess again.")
     elif guess > number:
         print("Your guess is too high. Guess again.")
-print("Congratulations! You guessed the number correctly after", guesses, "guesses!")
+    else:
+        print("Congratulations! You guessed the number correctly after", guesses, "guesses!")
